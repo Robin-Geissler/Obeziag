@@ -13,8 +13,10 @@ import requests
 import sys
 import lxml.html
 
-import extract_moodle_data
+sys.path.append("moodleCrawl")
+
 import download_file
+import extract_moodle_data
 
 #Bei Pattern muss genau angegeben werden kann auch mit oder benutzt werden
 COURSES = [
@@ -132,6 +134,6 @@ for course in COURSES:
     print('\n\n')
 
     print('Start downloading Files ...')
-    download_file.manage_download(course,data,session)
+    download_file.manage_download(course, data, session)
     print('Finsh downloading Files\n')
 
