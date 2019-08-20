@@ -13,7 +13,7 @@ import requests
 import sys
 import lxml.html
 
-import extract_data
+import extract_moodle_data
 import download_file
 
 #Bei Pattern muss genau angegeben werden kann auch mit oder benutzt werden
@@ -26,14 +26,14 @@ COURSES = [
     #     'pattern_assignment': r'Übungsblatt',
     #     'pattern_script': r'Skript',
     # },
-    {
-        'name': 'SMS',
-        'id': '46016',
-        'splash': True,
-        'basepath': '',
-        'pattern_assignment': r'Übungsblatt',
-        'pattern_script': r'Kapitel.*',
-    },
+    # {
+    #   'name': 'SMS',
+    #    'id': '46016',
+    #    'splash': True,
+    #    'basepath': '',
+    #    'pattern_assignment': r'Übungsblatt',
+    #    'pattern_script': r'Kapitel.*',
+    # },
     {
         'name': 'NumProg',
         'id': '45799',
@@ -108,6 +108,7 @@ def login():
 
     session.post(post_url, data=post_data)
 
+
 print('Login in Moodle')
 login()
 print('Login was succesfull\n')
@@ -121,7 +122,7 @@ for course in COURSES:
 
     #Return a Array of all sections from the course
     print('Colllect Data ...')
-    data = extract_data.getData(html, course)
+    data = extract_moodle_data.getData(html, course)
     print('Finish with collecting Data\n')
 
     print('-------->', course['name'], '<--------')

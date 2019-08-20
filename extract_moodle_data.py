@@ -30,11 +30,11 @@ class Processed_Section:
         print('\n')
 
 
-filename = "ana_html.txt"
-file_open = open(filename, "r")
-html = file_open.read()
-
-root = lxml.html.fromstring(html.encode('utf-8'))
+# filename = "ana_html.txt"
+# file_open = open(filename, "r")
+# html = file_open.read()
+#
+# root = lxml.html.fromstring(html.encode('utf-8'))
 
 ############################################################################
 
