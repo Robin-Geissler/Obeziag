@@ -1,0 +1,15 @@
+{
+  "name": "obeziag",
+  "version": "1.0.0",
+  "description": "Obeziag ist ein Crawler für die Moodle Platform. Er is designed um relevante Dateien automatisch herunter zu laden",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Robin Geissler",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.0.4"
+  }
+}
