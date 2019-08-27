@@ -1,0 +1,21 @@
+.menu{
+    background-color: white;
+}
+
+.on-screen{
+    background-color: #24588e;
+    color: white;
+}
+
+.off-screen{
+    background-color: #3070b3;
+    color: white;
+}
+
+h2{
+    padding: 10px;
+}
+
+h3{
+    padding: 5px
+}
