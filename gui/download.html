@@ -6,26 +6,30 @@
 
     <!-- Bootstrap Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script>let $ = require('jquery');</script>
-    <script>require('popper.js');</script>
+    <!--<script>let $ = require('jquery');</script>
+    <script>require('popper')</script>
     <script>require('bootstrap');</script>
+    <script>require('bootstrap.js')</script>
+    -->
 
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="obeziagDesignAnpassung.css" rel="stylesheet" type="text/css">
 
+
     <title>Obeziag</title>
 </head>
 <body>
-<div class="menu">
+<!--
+    <div class="menu">
     <div class="row">
-        <div class="col">
+        <div class="col well">
             <div class="on-screen" id="Download">
-                <h2 class="text-center">
+                <h2 class="text-center well">
                     Download
                 </h2>
             </div>
         </div>
-        <div class="col">
+        <div class="col well">
             <a href="allgemeineOptionen.html">
                 <div class="off-screen" id="Optionen">
                     <h2 class="text-center">
@@ -35,6 +39,24 @@
             </a>
         </div>
     </div>
+</div>
+-->
+
+<div>
+    <ul class="nav nav-pills nav-fill menu">
+        <li class="nav-item menu-item">
+            <a class="nav-link active" href="download.html" style="background-color: #2365b1;">Download</a>
+        </li>
+        <li class="nav-item menu-item dropdown">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+               href="#" role="button" style="background-color: #e0e0e0;">Optionen</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="allgemeineOptionen.html">Allgemeine Optionen</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="suchOptionen.html">Suchoptionen</a>
+            </div>
+        </li>
+    </ul>
 </div>
 
 
@@ -51,6 +73,10 @@
 <div>
     // Download Button
 </div>
+
+<script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
 </body>

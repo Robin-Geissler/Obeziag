@@ -6,17 +6,18 @@
 
     <!-- Bootstrap Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script>let $ = require('jquery');</script>
+    <!--<script>let $ = require('jquery');</script>
     <script>require('popper.js');</script>
     <script>require('bootstrap');</script>
+    -->
 
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="obeziagDesignAnpassung.css" rel="stylesheet" type="text/css">
+    <link href="obeziagDesignAnpassung.css" rel="stylesheet" type="text/css"/>
 
     <title>Obeziag</title>
 </head>
 <body>
-<div class="menu">
+<!--<div class="menu">
     <div class="row">
         <div class="col">
             <a href="download.html">
@@ -56,6 +57,25 @@
         </div>
     </div>
 </div>
+-->
+
+<div class=menu>
+    <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+            <a class="nav-link" href="download.html" style="background-color: #e0e0e0;">Download</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle active" data-toggle="dropdown"
+               href="#" role="button" style="background-color: #2365b1;">Optionen</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="allgemeineOptionen.html">Allgemeine Optionen</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item active" href="suchOptionen.html"
+                   style="background-color: #2365b1;">Suchoptionen</a>
+            </div>
+        </li>
+    </ul>
+</div>
 
 
 <div>
@@ -67,5 +87,11 @@
 <div>
     <h4>Fachspezifische Sucheinstellungen:</h4>
 </div>
+
+<script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
 </body>
 </html>
