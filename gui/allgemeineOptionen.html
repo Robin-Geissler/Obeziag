@@ -75,17 +75,45 @@
     </ul>
 </div>
 
+<div class="program-body">
 <div>
     <h1 class="text-center">Obeziag</h1>
 </div>
 <div>
     <h4>Login:</h4>
+    <form class="form" id="loginForm">
+        <div class="form-row">
+            <div class="form-group col-auto">
+                <label for="benutzername">Benutzername:</label>
+                <input class="form-control" id="benutzername" placeholder="Benutzername" type="text">
+            </div>
+            <div class="form-group col-auto">
+                <label for="passwort">Passwort:</label>
+                <input class="form-control" id="passwort" placeholder="Passwort" type="password">
+            </div>
+            <div class="col-auto">
+                <label for="check">Validieren:</label>
+                <br/>
+                <button class="btn btn-outline-success" type="submit">Validieren</button>
+            </div>
+
+        </div>
+    </form>
 </div>
-<div>
-    <h4>Aktuell verfügbare Fächer:</h4>
+    <!----------------script fuer die login auswertung------------------------------------------
+    <script>
+        const loginForm = document.getElementById("loginForm")
+        loginForm.addEventListener("submit", (e) => {e.preventDefault()});
+        console.log("login daten gesendet");
+    </script>
+    --------------------------------------------------------------------------------------------->
+
+    <div>
+        <h4>Aktuell verfügbare Fächer:</h4>
 </div>
 <div>
     <h4>Download Pfad:</h4>
+</div>
 </div>
 
 <script onload="window.$ = window.jQuery = module.exports;"
