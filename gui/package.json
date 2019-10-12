@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "jquery": "^3.4.1",
-    "popper.js": "^1.15.0"
+    "php": "0.0.1",
+    "popper.js": "^1.15.0",
+    "python-shell": "^1.0.8"
   }
 }

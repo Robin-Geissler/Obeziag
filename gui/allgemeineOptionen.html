@@ -57,6 +57,7 @@
 </div>
 -->
 
+<!--Menu-->
 <div class=menu>
     <ul class="nav nav-pills nav-fill">
         <li class="nav-item">
@@ -75,30 +76,35 @@
     </ul>
 </div>
 
+<!--Program-->
 <div class="program-body">
+    <!--Program Ueberschrift-->
 <div>
     <h1 class="text-center">Obeziag</h1>
 </div>
+    <!--Login Form-->
 <div>
     <h4>Login:</h4>
-    <form class="form" id="loginForm">
-        <div class="form-row">
-            <div class="form-group col-auto">
+
+    <div class="form-row">
+        <div class="col-auto">
                 <label for="benutzername">Benutzername:</label>
-                <input class="form-control" id="benutzername" placeholder="Benutzername" type="text">
+            <input class="form-control" id="user" placeholder="Benutzername" type="text">
             </div>
-            <div class="form-group col-auto">
+        <div class="col-auto">
                 <label for="passwort">Passwort:</label>
-                <input class="form-control" id="passwort" placeholder="Passwort" type="password">
+            <input class="form-control" id="password" placeholder="Passwort" type="password">
             </div>
             <div class="col-auto">
                 <label for="check">Validieren:</label>
                 <br/>
-                <button class="btn btn-outline-success" type="submit">Validieren</button>
+                <button class="btn btn-outline-success" onclick=setLogin()>
+                    Validieren
+                </button>
             </div>
 
         </div>
-    </form>
+
 </div>
     <!----------------script fuer die login auswertung------------------------------------------
     <script>
@@ -106,6 +112,8 @@
         loginForm.addEventListener("submit", (e) => {e.preventDefault()});
         console.log("login daten gesendet");
     </script>
+
+    
     --------------------------------------------------------------------------------------------->
 
     <div>
@@ -120,6 +128,8 @@
         src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--eventuel nur "/scripts/login.js"-->
+<script src="linkers/saveLoginData.js"></script>
 
 
 </body>
