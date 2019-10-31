@@ -29,3 +29,5 @@ GUI/Konsolen Bedienung des Programmes
 OneDrive API implementieren
 
 Kommunikation zwischen Raspberry und Mac (Benachrichtigung ob neue Files von Moodle geladen worden sind)
+
+Vor einem Build muss der Schluessel in dataFunctions.py geaendert werden
