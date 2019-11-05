@@ -89,7 +89,7 @@ def manage_download(course, data, session):
 
             if returnValue is None:
                 print("Big Problem: URL is wrong")
-            elif returnValue is not '':
+            elif returnValue != '':
                 newFiles.append(returnValue)
 
         for d_s in d.scripts:
@@ -97,7 +97,7 @@ def manage_download(course, data, session):
 
             if returnValue is None:
                 print("Big Problem: URL is wrong")
-            elif returnValue is not '':
+            elif returnValue != '':
                 newFiles.append(returnValue)
 
 

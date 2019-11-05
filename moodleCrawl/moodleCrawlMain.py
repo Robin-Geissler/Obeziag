@@ -17,6 +17,7 @@ sys.path.append("moodleCrawl")
 
 import download_file
 import extract_moodle_data
+import dataFunctions
 
 #Bei Pattern muss genau angegeben werden kann auch mit oder benutzt werden
 COURSES = [
@@ -53,10 +54,12 @@ SHIBBOLETH = 'Shibboleth.sso/Login?providerId=https%3A%2F%2Ftumidp.lrz.de%2Fidp%
 ######################## Input verarbeiten ########################
 if (len(sys.argv) < 3):
     print("args: <USER> <PASSWORD> [<PATH>]")
-    exit()
+    sys.stdout.flush()
+    exit(None)
 
-USER = sys.argv[1]
-PASSWORD = sys.argv[2]
+
+USER = dataFunctions.read_login_data()[0]
+PASSWORD = dataFunctions.read_login_data()[1]
 
 if (len(sys.argv) > 3):
     basepath = sys.argv[3]
@@ -117,7 +120,9 @@ print('Login was succesfull\n')
 
 ################################################################################################
 
-
+###############################################################
+sys.stdout.flush()
+##################################################################
 # Iterate through courses
 for course in COURSES:
     html = get('course/view.php?id={}'.format(course['id'])).text

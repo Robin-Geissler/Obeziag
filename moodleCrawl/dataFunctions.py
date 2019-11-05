@@ -42,7 +42,7 @@ def write_login_data(username, userpassword):
 # output is a Tupel (user,password)
 # password and username will be decrypted
 def read_login_data():
-    with open("../data/loginData.json") as json_file:
+    with open("../data/loginData.json", "r") as json_file:
         json_data = json.load(json_file)
         user = json_data.get("user")
         password = json_data.get("password")
